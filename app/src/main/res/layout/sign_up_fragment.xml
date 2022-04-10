@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="beforeDescendants"
+    android:fillViewport="true"
+    android:focusableInTouchMode="true"
+    android:scrollbars="none"
+    tools:context=".ui.module.authentication.fragment.SignUpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutUserName"
+            style="@style/Widget.BaseAppTextInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/app_space_45"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginEnd="@dimen/app_space_45"
+            android:hint="@string/hint_user_name"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.BaseAppTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:digits="@string/digits_name"
+                android:inputType="textCapWords"
+                android:maxLength="@integer/name_max_length" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutEmail"
+            style="@style/Widget.BaseAppTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:hint="@string/hint_email"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutUserName"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutUserName"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutUserName">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.BaseAppTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress"
+                android:maxLength="@integer/email_max_length" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintPhone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutEmail"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutEmail"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutEmail">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCountryCode"
+                style="@style/Widget.BaseAppTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_code"
+                app:endIconDrawable="@android:drawable/arrow_down_float"
+                app:endIconMode="custom"
+                app:endIconTint="@color/colorGrey66"
+                app:layout_constraintEnd_toStartOf="@+id/textInputLayoutMobileNumber"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintHorizontal_weight="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.BaseAppTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="@integer/code_max_length"
+                    android:text="123456" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutMobileNumber"
+                style="@style/Widget.BaseAppTextInputLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_mobile_number"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@+id/textInputLayoutCountryCode"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/Widget.BaseAppTextInputEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="@integer/phone_max_length" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutPassword"
+            style="@style/Widget.BaseAppTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:hint="@string/hint_password"
+            app:layout_constraintEnd_toEndOf="@+id/constraintPhone"
+            app:layout_constraintStart_toStartOf="@+id/constraintPhone"
+            app:layout_constraintTop_toBottomOf="@+id/constraintPhone"
+            app:passwordToggleDrawable="@drawable/selector_show_hide_password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorGrey8B">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.BaseAppTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="@integer/password_max_length" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayoutConfirmPassword"
+            style="@style/Widget.BaseAppTextInputLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:hint="@string/hint_confirm_password"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutPassword"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutPassword"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutPassword"
+            app:passwordToggleDrawable="@drawable/selector_show_hide_password"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorGrey8B">
+
+            <com.google.android.material.textfield.TextInputEditText
+                style="@style/Widget.BaseAppTextInputEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:maxLength="@integer/password_max_length" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatCheckBox
+            android:id="@+id/checkBoxTermsAndCondition"
+            style="@style/MuseoSans300.Grey66.16"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:button="@drawable/selector_checkbox_terms_and_condition"
+            android:gravity="top"
+            android:paddingStart="@dimen/_5sdp"
+            android:paddingEnd="0dp"
+            android:text="@string/label_i_agree_terms_privacy"
+            app:layout_constraintEnd_toEndOf="@+id/textInputLayoutConfirmPassword"
+            app:layout_constraintStart_toStartOf="@+id/textInputLayoutConfirmPassword"
+            app:layout_constraintTop_toBottomOf="@+id/textInputLayoutConfirmPassword" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/buttonCreate"
+            style="@style/Widget.BaseAppBlueFillButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/_20sdp"
+            android:paddingEnd="@dimen/_20sdp"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/button_create"
+            android:textAllCaps="true"
+            app:layout_constraintStart_toStartOf="@+id/checkBoxTermsAndCondition"
+            app:layout_constraintTop_toBottomOf="@+id/checkBoxTermsAndCondition" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

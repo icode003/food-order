@@ -1,0 +1,99 @@
+<resources>
+    <string name="app_name">Khane</string>
+
+    <string name="connection_exception">OOPS! NO INTERNET. Please check your network connection. Try Again</string>
+    <string name="socket_time_out_exception">Connection time out</string>
+    <string name="other_exception">Something wrong here</string>
+    <string name="placeholder_x">XXXXX XXXXXX XXXXXX XXXXXX XXXXXX XXXXX XXXX XXXXXX XXXXXXX XXXXXXXXXXXX XXXXXXX XXXXXXXXXXXXXX XXXXXXXXXX XX XX XXXXXX</string>
+    <string name="placeholder">Lorem Ipsum is simply</string>
+    <string name="placeholder_short">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</string>
+    <string name="placeholder_medium">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <string name="placeholder_long">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</string>
+    <!--region Permission Message-->
+    <string name="msg_no_permission_photos_and_videos">To Capture photos and videos allow # to access your camera, photos or videos.\nTap Settings > Permissions, and turn Camera on.</string>
+    <string name="msg_storage"># does not have access to your Storage. To enable access,\n\nTap Settings > Permissions and turn Storage on.</string>
+    <string name="msg_no_permission_location"># does not have access to your Location. To enable access, tap Settings and turn on Location</string>
+    <string name="grant_camera_permission">Please grant camera permission</string>
+    <string name="grant_storage_permission">Please grant storage permissions</string>
+    <string name="error_msg_something_went_wrong_with_media">Something went wrong! Please try other media.</string>
+    <string name="digits_name">abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ ÁáÂâÃãÀàÇçÉéÊêÍíÓóÔôÕõÚú</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="msg_press_back_again_to_exit">Press back again to exit</string>
+    <string name="image_picker_camera">Camera</string>
+    <string name="image_picker_gallery">Gallery</string>
+    <string name="label_search">Search</string>
+    <string name="label_share">Share</string>
+    <string name="label_send_email_via">Send email via</string>
+    <string name="label_yes">Yes</string>
+    <string name="label_no">No</string>
+    <string name="hint_search_country">Search Country</string>
+    <!--endregion-->
+
+    <string name="validation_enter_username">Please enter username</string>
+    <string name="validation_enter_password">Please enter password</string>
+    <string name="validation_enter_name">Please enter name</string>
+    <string name="validation_about_me">Please enter about me</string>
+    <string name="validation_enter_email_or_mobile">Please enter email or mobile number</string>
+    <string name="validation_enter_first_name">Please enter first name</string>
+    <string name="validation_enter_last_name">Please enter last name</string>
+    <string name="validation_enter_minimum_2_char_name">Please enter minimum of 2 characters for name</string>
+    <string name="validation_enter_minimum_2_char_first_name">Please enter minimum of 2 characters for first name</string>
+    <string name="validation_enter_minimum_2_char_last_name">Please enter minimum of 2 characters for last name</string>
+    <string name="validation_enter_minimum_2_char_username">Please enter minimum of 2 characters for username</string>
+    <string name="validation_enter_email">Please enter email</string>
+    <string name="validation_enter_valid_email">Please enter valid email</string>
+    <string name="validation_enter_current_password">Please enter current password</string>
+    <string name="validation_enter_minimum_8_char_current_password">Please enter minimum of 8 characters for current password</string>
+    <string name="validation_enter_new_password">Please enter new password</string>
+    <string name="validation_enter_minimum_8_char_new_password">Please enter minimum of 8 characters for new password</string>
+    <string name="validation_enter_minimum_4_char_password">Please enter minimum of 4 characters for password</string>
+    <string name="validation_enter_confirm_password">Please enter confirm password</string>
+    <string name="validation_enter_minimum_8_char_confirm_password">Please enter minimum of 8 characters for confirm password</string>
+    <string name="validation_password_mismatch">Password mismatch</string>
+    <string name="validation_enter_minimum_8_char_password">Please enter minimum of 8 characters for password</string>
+    <string name="validation_enter_mobile_number">Please enter mobile number</string>
+    <string name="validation_valid_mobile_number">Please enter minimum 8 and maximum 11 digits for mobile number</string>
+    <string name="validation_enter_feedback_message">Please enter feedback message</string>
+    <string name="validation_select_feedback_rating">Please select feedback rating</string>
+    <string name="validation_enter_title_here">Please enter title here</string>
+    <string name="validation_enter_memory_here">Please enter memory here</string>
+    <string name="validation_please_agree_terms_and_conditions">Please agree with terms and conditions</string>
+    <string name="validation_enter_verification_code">Please enter verification code</string>
+    <string name="validation_enter_valid_verification_code">Please enter 4 digit verification code</string>
+    <string name="validation_enter_subject">Please enter subject</string>
+    <string name="validation_enter_description">Please enter description</string>
+
+    <string name="toast_verification_code_resend_successfully">Verification code resend successfully</string>
+    <string name="toast_forgot_password_success">A request has been received to change the password for your account</string>
+    <string name="toast_reset_password_success">Reset password successfully</string>
+
+    <string name="button_english">English</string>
+    <string name="button_arabic">لغة عربية</string>
+    <string name="label_choose_language">Choose language</string>
+    <string name="label_sign_up">Sign Up</string>
+    <string name="label_login">Log In</string>
+    <string name="hint_user_name">User Name</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_code">Code</string>
+    <string name="hint_mobile_number">Mobile Number</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="label_i_agree_terms_privacy">Agree on Terms and Conditions and Privacy Policy</string>
+    <string name="label_terms_and_conditions">Terms and Conditions</string>
+    <string name="label_privacy_policy">Privacy Policy</string>
+    <string name="button_create">Next</string>
+    <string name="hint_email_or_mobile_number">Email or mobile number</string>
+    <string name="label_forget_password_q">Forget password?</string>
+    <string name="label_forget_password">Forget Password</string>
+    <string name="button_send">Send</string>
+    <string name="hint_email_username_or_mobile_number">Email, username or mobile number</string>
+    <string name="label_confirmation_code">Confirmation Code</string>
+    <string name="label_write_the_code_here">Write the code here</string>
+    <string name="label_reset_password">Reset Password</string>
+    <string name="hint_new_password">New Password</string>
+    <string name="label_home">Home</string>
+    <string name="label_auction_rooms">Auction rooms</string>
+    <string name="label_car_dealers">Car Dealers</string>
+    <string name="label_user">User</string>
+
+</resources>

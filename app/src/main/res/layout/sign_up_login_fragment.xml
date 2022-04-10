@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.module.authentication.fragment.SignUpLoginFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTitle"
+        style="@style/MuseoSans700.White.18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueTheme0C"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_14sdp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Title" />
+
+    <io.github.florent37.shapeofview.shapes.RoundRectView
+        android:id="@+id/roundedTab"
+        style="@style/RoundRectViewRadius4"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/tab_height"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTitle">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGreyF2"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <io.github.florent37.shapeofview.shapes.RoundRectView
+                style="@style/RoundRectViewRadius4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewSignUp"
+                    style="@style/MuseoSans900.White.13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/colorBlueTheme0C"
+                    android:gravity="center"
+                    android:text="@string/label_login"
+                    android:textAllCaps="true" />
+
+            </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+            <io.github.florent37.shapeofview.shapes.RoundRectView
+                style="@style/RoundRectViewRadius4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewLogIn"
+                    style="@style/MuseoSans900.Grey66.13"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:text="@string/label_sign_up"
+                    android:textAllCaps="true" />
+            </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+        </LinearLayout>
+    </io.github.florent37.shapeofview.shapes.RoundRectView>
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/roundedTab" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

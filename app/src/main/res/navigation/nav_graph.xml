@@ -1,0 +1,41 @@
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph">
+ <!--   app:startDestination="@id/bottomNavigationHome"-->
+
+ <!--   <fragment
+        android:id="@+id/bottomNavigationHome"
+        android:name="com.lend.customer.ui.module.main.home.fragment.HomeFragment"
+        android:label="HomeFragment"
+        tools:layout="@layout/home_fragment" />
+
+    <fragment
+        android:id="@+id/bottomNavigationMyBookings"
+        android:name="com.lend.customer.ui.module.main.mybooking.fragment.MyBookingsFragment"
+        android:label="MyBookingsFragment"
+        tools:layout="@layout/my_bookings_fragment" />
+
+
+    <fragment
+        android:id="@+id/bottomNavigationCamera"
+        android:name="com.lend.customer.ui.module.main.camera.fragment.CameraFragment"
+        android:label="CameraFragment"
+        tools:layout="@layout/camera_fragment" />
+
+
+    <fragment
+        android:id="@+id/bottomNavigationChat"
+        android:name="com.lend.customer.ui.module.main.chat.fragment.ChatsFragment"
+        android:label="ChatFragment"
+        tools:layout="@layout/chats_fragment" />
+
+
+    <fragment
+        android:id="@+id/bottomNavigationMore"
+        android:name="com.lend.customer.ui.module.main.more.fragment.MoreFragment"
+        android:label="MoreFragment"
+        tools:layout="@layout/more_fragment" />-->
+
+
+</navigation>

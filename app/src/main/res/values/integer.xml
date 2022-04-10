@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="password_max_length">20</integer>
+    <integer name="user_name_max_length">20</integer>
+    <integer name="name_max_length">50</integer>
+    <integer name="code_max_length">5</integer>
+    <integer name="phone_max_length">11</integer>
+    <integer name="email_max_length">50</integer>
+    <integer name="card_min_length">3</integer>
+    <integer name="card_max_length">16</integer>
+    <integer name="cvv_max_length">3</integer>
+    <integer name="number_max_length">20</integer>
+    <integer name="percentage_max_length">2</integer>
+    <integer name="account_number_max_length">15</integer>
+    <integer name="zip_code_length">6</integer>
+    <integer name="price_max_length">8</integer>
+    <integer name="qty_max_length">3</integer>
+    <integer name="size_max_length">3</integer>
+</resources>

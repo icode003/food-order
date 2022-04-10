@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<io.github.florent37.shapeofview.shapes.RoundRectView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    style="@style/RoundRectViewRadius4"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    app:shape_roundRect_borderColor="@color/colorGreyC5"
+    app:shape_roundRect_borderWidth="@dimen/_1sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite">
+
+        <!-- app:searchIcon="@drawable/ic_search"-->
+        <!-- style="@style/SFProDisplayRegular.Black.16"-->
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            style="@style/MuseoSans400.Black1C.16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:elevation="0dp"
+            android:focusable="true"
+            android:paddingStart="-10dp"
+            android:paddingEnd="-5dp"
+            app:defaultQueryHint="@string/label_search"
+            app:iconifiedByDefault="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:queryBackground="@color/colorTransparent"
+            app:queryHint="@string/label_search" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</io.github.florent37.shapeofview.shapes.RoundRectView>

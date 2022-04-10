@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/drawer_top_height"
+        android:background="@color/colorGreyF7"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/imageViewDrawerPhoto"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="@dimen/_50sdp"
+            android:layout_marginStart="@dimen/_20sdp"
+            android:src="@drawable/ic_test_user"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDrawerName"
+            style="@style/MuseoSans900.Black1C.18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_12sdp"
+            android:layout_marginEnd="@dimen/_20sdp"
+            android:text="Loay Nour"
+            app:layout_constraintBottom_toTopOf="@+id/textViewDrawerEmail"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageViewDrawerPhoto"
+            app:layout_constraintTop_toTopOf="@+id/imageViewDrawerPhoto"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDrawerEmail"
+            style="@style/MuseoSans500.Grey8B.14"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="loaynour@gmail.com"
+            app:layout_constraintBottom_toBottomOf="@+id/imageViewDrawerPhoto"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDrawerName"
+            app:layout_constraintStart_toStartOf="@+id/textViewDrawerName"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDrawerName" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDrawerMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@+id/constraintTop"
+        tools:itemCount="15"
+        tools:listitem="@layout/drawer_menu_list" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomEditText">
+        <attr name="etBorderColor" format="color" />
+        <attr name="etBackgroundColor" format="color" />
+        <attr name="etBorderStroke" format="integer" />
+        <attr name="etLeftTopRadius" format="dimension" />
+        <attr name="etRightTopRadius" format="dimension" />
+        <attr name="etRightBottomRadius" format="dimension" />
+        <attr name="etLeftBottomRadius" format="dimension" />
+        <attr name="etIsCountryCode" format="boolean" />
+        <attr name="etIsPhone" format="boolean" />
+        <attr name="etIsCustomBottomLine" format="boolean" />
+        <attr name="etRadius" format="dimension" />
+        <attr name="etBottomLineNormalColor" format="color" />
+        <attr name="etBottomLineFocusColor" format="color" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomConstraintLayout">
+        <attr name="clBgColor" format="color" />
+        <attr name="clBorderColor" format="color" />
+        <attr name="clBorderStroke" format="integer" />
+        <attr name="clRadius" format="dimension" />
+        <attr name="clLeftTopRadius" format="dimension" />
+        <attr name="clRightTopRadius" format="dimension" />
+        <attr name="clRightBottomRadius" format="dimension" />
+        <attr name="clLeftBottomRadius" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CircleSeekBar">
+        <attr name="csb_progress" format="integer" />
+        <attr name="csb_min" format="integer" />
+        <attr name="csb_max" format="integer" />
+        <attr name="csb_step" format="integer" />
+
+        <attr name="csb_thumbDrawable" format="reference" />
+        <attr name="csb_thumbSize" format="dimension" />
+
+        <attr name="csb_progressColor" format="color" />
+        <attr name="csb_progressWidth" format="dimension" />
+
+        <attr name="csb_arcColor" format="color" />
+        <attr name="csb_arcWidth" format="dimension" />
+
+        <attr name="csb_textSize" format="dimension" />
+        <attr name="csb_textColor" format="color" />
+
+        <attr name="csb_isShowText" format="boolean" />
+
+    </declare-styleable>
+
+    <declare-styleable name="ParallaxViewPager">
+        <attr name="speedRatio" format="float" />
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.module.authentication.fragment.ChooseLanguageFragment">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_70sdp"
+        android:src="@drawable/ic_choose_language_logo"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewChooseLanguage"
+        style="@style/MuseoSans900.Black1C.24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:text="@string/label_choose_language"
+        app:layout_constraintBottom_toTopOf="@+id/buttonArabic"
+        app:layout_constraintStart_toStartOf="@+id/buttonArabic" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonArabic"
+        style="@style/Widget.BaseAppBlueFillButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/app_space_45"
+        android:layout_marginEnd="@dimen/app_space_45"
+        android:text="@string/button_arabic"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toTopOf="@+id/buttonEnglish"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/buttonEnglish"
+        style="@style/Widget.BaseAppBlueFillBorderButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/app_space_45"
+        android:layout_marginEnd="@dimen/app_space_45"
+        android:layout_marginBottom="@dimen/_70sdp"
+        android:text="@string/button_english"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

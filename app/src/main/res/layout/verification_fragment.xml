@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.module.authentication.fragment.VerificationFragment">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewConfirmationCode"
+        style="@style/MuseoSans700.White.18"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlueTheme0C"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_14sdp"
+        android:text="@string/label_confirmation_code"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewWriteTheCode"
+        style="@style/MuseoSans300.Black1C.16"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_write_the_code_here"
+        app:layout_constraintBottom_toTopOf="@+id/pinView"
+        app:layout_constraintStart_toStartOf="@+id/pinView"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConfirmationCode"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <com.chaos.view.PinView
+        android:id="@+id/pinView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:cursorVisible="false"
+        android:focusableInTouchMode="true"
+        android:fontFamily="@font/museo_sans_500"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:textColor="@color/colorBlack1C"
+        android:textSize="@dimen/sp_22"
+        app:itemCount="4"
+        app:itemHeight="@dimen/pin_view_height"
+        app:itemSpacing="@dimen/_10sdp"
+        app:itemWidth="@dimen/pin_view_width"
+        app:layout_constraintBottom_toTopOf="@+id/imageViewRight"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWriteTheCode"
+        app:lineColor="@color/colorGreyC9"
+        app:lineWidth="@dimen/dp_1"
+        app:viewType="line"
+        tools:text="1234" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/imageViewRight"
+        style="@style/Widget.BaseAppBlueFillButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_30sdp"
+        android:paddingStart="@dimen/_20sdp"
+        android:paddingEnd="@dimen/_20sdp"
+        android:text="@string/button_create"
+        android:textAllCaps="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pinView" />
+
+<!--    <androidx.appcompat.widget.AppCompatImageView-->
+<!--        android:id="@+id/imageViewRight"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="@dimen/_30sdp"-->
+<!--        android:src="@drawable/ic_verification_right"-->
+<!--        -->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/pinView" />-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/bottomNavigationHome"
+        android:icon="@drawable/ic_nav_home"
+        android:title="@string/label_home" />
+
+    <item
+        android:id="@+id/bottomNavigationAuctionRooms"
+        android:icon="@drawable/ic_nav_auction_rooms"
+        android:title="@string/label_auction_rooms" />
+
+    <item
+        android:id="@+id/bottomNavigationCarDealers"
+        android:icon="@drawable/ic_nav_car_dealers"
+        android:title="@string/label_car_dealers" />
+
+    <item
+        android:id="@+id/bottomNavigationUser"
+        android:icon="@drawable/ic_nav_user"
+        android:title="@string/label_user" />
+
+</menu>
